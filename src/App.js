@@ -99,7 +99,7 @@ function App() {
         </a></Text></h4>
       </Col>
       <Col></Col>
-      <Col xs={3}><Button href="https://github.com/furkanaktepe01/AutoRandom" target="_blank">See Github Repository</Button></Col>
+      <Col xs={3}><Button href="https://github.com/furkanaktepe01/AutoRandom" target="_blank">See the Code</Button></Col>
     </Row>
 
     </Container>
