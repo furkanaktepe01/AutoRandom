@@ -1,8 +1,6 @@
 import contract from "./contract.js";
 import { useState, useEffect } from "react";
 import { Card, Container, Col, Row, Button } from "react-bootstrap";
-import { Text } from 'react-font'
-
 
 function App() {
 
@@ -10,7 +8,7 @@ function App() {
 
   const contractLink = `https://sepolia.etherscan.io/address/${process.env.REACT_APP_CONTRACT_ADDRESS}`;
 
-  const fontName = "Montserrat";
+  const fontName = "montserrat";
 
   const update = async () => {  
 
@@ -44,9 +42,9 @@ function App() {
 
       <Row>
         <Col></Col>
-        <Col xs={5}><Text family={fontName}><h1 style={{color:"white", fontSize:"20mm"}}>
-         AutoRandom
-        </h1></Text></Col>
+        <Col xs={5}><h1 style={{color:"white", fontSize:"20mm", fontFamily:fontName}}>
+          AutoRandom
+        </h1></Col>
         <Col></Col>
       </Row>
 
@@ -55,10 +53,10 @@ function App() {
       <Row>
         <Col></Col>
         <Col xs={12}>
-          <h5 style={{color:"white", fontSize:"6mm"}}><i><Text family={fontName}>
+          <h5 style={{color:"white", fontSize:"6mm", fontFamily:fontName}}><i>
             AutoRandom is an automated verifiable random number generator
             that shares a random number on a daily basis, utilizing Chainlink VRF and OpenZeppelin Defender's Automated Actions
-          </Text></i></h5>
+          </i></h5>
         </Col>
         <Col></Col>
       </Row>
@@ -69,20 +67,20 @@ function App() {
         <Col></Col>
         <Col xs={12}>
           
-        <Card 
-          style={{ width: '80rem' }} 
-          bg="light"
-          className="mb-2"
-          text="dark">
-          <Card.Body>
-            <Card.Title as="h1"><Text family={fontName}>Today's Random Number</Text></Card.Title>
-            <Card.Text as="h3">
-              <br/>
-              <Text family={fontName}>{lastRandomNumber}</Text>
-              <br/>
-            </Card.Text>
-          </Card.Body>
-        </Card>
+          <Card 
+            style={{ width: '80rem' }} 
+            bg="light"
+            className="mb-2"
+            text="dark">
+            <Card.Body>
+              <Card.Title as="h1" style={{fontFamily:fontName}}>Today's Random Number</Card.Title>
+              <Card.Text>
+                <br/>
+                <h3 style={{fontFamily:fontName}}>{lastRandomNumber}</h3>
+                <br/>
+              </Card.Text>
+            </Card.Body>
+          </Card>
           
         </Col>
         <Col></Col>
@@ -93,13 +91,13 @@ function App() {
     <Row>
       <Col></Col>
       <Col xs={8}>
-        <h4 style={{color:"white"}}><Text family={fontName}>
+        <h4 style={{color:"white", fontFamily:fontName}}>
           Contract Address: <a href={contractLink} 
           rel="noreferrer" target="_blank">{process.env.REACT_APP_CONTRACT_ADDRESS}
-        </a></Text></h4>
+        </a></h4>
       </Col>
       <Col></Col>
-      <Col xs={3}><Button href="https://github.com/furkanaktepe01/AutoRandom" target="_blank">See the Code</Button></Col>
+      <Col xs={3}><Button href="https://github.com/furkanaktepe01/AutoRandom" target="_blank" style={{fontFamily:fontName}}>See the Code</Button></Col>
     </Row>
 
     </Container>
