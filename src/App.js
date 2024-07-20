@@ -83,7 +83,7 @@ function App() {
           </Card>
           
         </Col>
-        <Col></Col>
+        <Col xs={3}></Col>
       </Row>
 
     <br/><br/><br/>
