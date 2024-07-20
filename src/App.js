@@ -52,9 +52,9 @@ function App() {
       
       <Row>
         <Col></Col>
-        <Col xs={12}>
+        <Col xs={10}>
           <h5 style={{color:"white", fontSize:"6mm", fontFamily:fontName}}><i>
-            AutoRandom is an automated verifiable random number generator
+            AutoRandom is an automated verifiable random number generator 
             that shares a random number on a daily basis, utilizing Chainlink VRF and OpenZeppelin Defender's Automated Actions
           </i></h5>
         </Col>
